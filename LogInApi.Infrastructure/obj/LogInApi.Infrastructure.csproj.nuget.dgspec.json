@@ -1,0 +1,178 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Infrastructure/LogInApi.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Application/LogInApi.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Application/LogInApi.Application.csproj",
+        "projectName": "LogInApi.Application",
+        "projectPath": "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Application/LogInApi.Application.csproj",
+        "packagesPath": "/Users/ranimyleite/.nuget/packages/",
+        "outputPath": "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ranimyleite/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Domain/LogInApi.Domain.csproj": {
+                "projectPath": "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Domain/LogInApi.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Domain/LogInApi.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Domain/LogInApi.Domain.csproj",
+        "projectName": "LogInApi.Domain",
+        "projectPath": "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Domain/LogInApi.Domain.csproj",
+        "packagesPath": "/Users/ranimyleite/.nuget/packages/",
+        "outputPath": "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ranimyleite/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Infrastructure/LogInApi.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Infrastructure/LogInApi.Infrastructure.csproj",
+        "projectName": "LogInApi.Infrastructure",
+        "projectPath": "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Infrastructure/LogInApi.Infrastructure.csproj",
+        "packagesPath": "/Users/ranimyleite/.nuget/packages/",
+        "outputPath": "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ranimyleite/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Application/LogInApi.Application.csproj": {
+                "projectPath": "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Application/LogInApi.Application.csproj"
+              },
+              "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Domain/LogInApi.Domain.csproj": {
+                "projectPath": "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Domain/LogInApi.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

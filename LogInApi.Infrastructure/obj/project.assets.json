@@ -1,0 +1,111 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "LogInApi.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "LogInApi.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LogInApi.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LogInApi.Application.dll": {}
+        }
+      },
+      "LogInApi.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/LogInApi.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LogInApi.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LogInApi.Application/1.0.0": {
+      "type": "project",
+      "path": "../LogInApi.Application/LogInApi.Application.csproj",
+      "msbuildProject": "../LogInApi.Application/LogInApi.Application.csproj"
+    },
+    "LogInApi.Domain/1.0.0": {
+      "type": "project",
+      "path": "../LogInApi.Domain/LogInApi.Domain.csproj",
+      "msbuildProject": "../LogInApi.Domain/LogInApi.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "LogInApi.Application >= 1.0.0",
+      "LogInApi.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/ranimyleite/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Infrastructure/LogInApi.Infrastructure.csproj",
+      "projectName": "LogInApi.Infrastructure",
+      "projectPath": "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Infrastructure/LogInApi.Infrastructure.csproj",
+      "packagesPath": "/Users/ranimyleite/.nuget/packages/",
+      "outputPath": "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Infrastructure/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/ranimyleite/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Application/LogInApi.Application.csproj": {
+              "projectPath": "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Application/LogInApi.Application.csproj"
+            },
+            "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Domain/LogInApi.Domain.csproj": {
+              "projectPath": "/Users/ranimyleite/Desktop/Projetos - 2026/LogInApi/LogInApi.Domain/LogInApi.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
