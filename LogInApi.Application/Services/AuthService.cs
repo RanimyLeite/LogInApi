@@ -11,8 +11,8 @@ using Microsoft.IdentityModel.Tokens;
 namespace LogInApi.Application.Services;
 
 public class AuthService : IAuthService
-{
-private readonly UserManager<ApplicationUser> _userManager;
+{ 
+    private readonly UserManager<ApplicationUser> _userManager;
     private readonly IConfiguration _configuration;
 
     public AuthService(
@@ -27,7 +27,7 @@ private readonly UserManager<ApplicationUser> _userManager;
     {
         var existingUser = await _userManager.FindByEmailAsync(dto.Email);
         if (existingUser != null)
-            throw new InvalidOperationException("Usuário já cadastrado!");
+            throw new InvalidOperationException("User already registered!");
         
         var user = new ApplicationUser
         {
@@ -53,12 +53,12 @@ private readonly UserManager<ApplicationUser> _userManager;
         var user = await _userManager.FindByEmailAsync(dto.Email);
 
         if (user == null)
-            throw new UnauthorizedAccessException("Usuário ou senha inválidos");
+            throw new UnauthorizedAccessException("Invalid username or password!");
 
         var validPassword = await _userManager.CheckPasswordAsync(user, dto.Password);
 
         if (!validPassword)
-            throw new UnauthorizedAccessException("Usuário ou senha inválidos");
+            throw new UnauthorizedAccessException("Invalid username or password!");
 
         var roles = await _userManager.GetRolesAsync(user);
         var claims = await _userManager.GetClaimsAsync(user);

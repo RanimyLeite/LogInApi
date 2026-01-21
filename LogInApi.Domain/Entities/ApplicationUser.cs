@@ -1,6 +1,6 @@
-namespace LogInApi.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 
+namespace LogInApi.Domain.Entities;
 
 public class ApplicationUser : IdentityUser<Guid>
 {
