@@ -3,6 +3,7 @@ using LogInApi.Application.Interfaces;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using System.Text.Json;
 using LogInApi.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
@@ -46,6 +47,8 @@ public class AuthService : IAuthService
 
             throw new ApplicationException(errors);
         }
+        
+        await _userManager.AddToRoleAsync(user, "User");
     }
 
     public async Task<AuthResponseDto> LoginAsync(LoginDto dto)
@@ -87,6 +90,12 @@ public class AuthService : IAuthService
         };
 
         jwtClaims.AddRange(roles.Select(r => new Claim(ClaimTypes.Role, r)));
+        
+        foreach (var role in roles)
+        {
+            jwtClaims.Add(new Claim("roles", role));
+        }
+
         jwtClaims.AddRange(claims);
 
         var key = new SymmetricSecurityKey(
