@@ -25,23 +25,20 @@ private readonly UserManager<ApplicationUser> _userManager;
     
     public async Task CreateUserAsync(RegisterUserDto dto)
     {
-        // 1️⃣ Verifica se o usuário já existe
         var existingUser = await _userManager.FindByEmailAsync(dto.Email);
         if (existingUser != null)
-            throw new InvalidOperationException("Usuário já cadastrado");
-
-        // 2️⃣ Cria a entidade do usuário
+            throw new InvalidOperationException("Usuário já cadastrado!");
+        
         var user = new ApplicationUser
         {
-            UserName = dto.Email,
+            UserName = dto.Name,
             Email = dto.Email,
-            EmailConfirmed = true // opcional (mude se quiser confirmação por email)
+            EmailConfirmed = true,
+            PhoneNumber = dto.Phone
         };
-
-        // 3️⃣ Cria o usuário COM senha (gera PasswordHash corretamente)
+        
         var result = await _userManager.CreateAsync(user, dto.Password);
-
-        // 4️⃣ Valida erros do Identity
+        
         if (!result.Succeeded)
         {
             var errors = string.Join(", ",
