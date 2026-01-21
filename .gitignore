@@ -4,7 +4,7 @@
 bin/
 obj/
 out/
-obj/
+appsettings.Development.json
 
 
 ########################
